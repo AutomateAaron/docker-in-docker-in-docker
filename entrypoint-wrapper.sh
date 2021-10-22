@@ -7,12 +7,13 @@ set -m
 dockerd-entrypoint.sh &
 
 # Wait until the daemon comes up
-while ! docker ps
-do 
-  echo "Waiting for docker daemon..."
-  sleep 2
-done
+# while ! docker ps
+# do 
+#   echo "Waiting for docker daemon..."
+#   sleep 2
+# done
 
 # Run this image again inside the container
-docker run --privileged aaronnbrock/docker-in-docker-in-docker
+# docker run --privileged aaronnbrock/docker-in-docker-in-docker
 
+echo "nothing to see here"
